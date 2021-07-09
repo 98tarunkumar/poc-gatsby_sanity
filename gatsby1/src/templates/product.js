@@ -26,51 +26,11 @@ const Product = ({ data }) => {
   console.log(buy)
   return (
     <Layout>
-      <div
-        style={{
-          width: "100%",
-          padding: "78px",
-          display: "flex",
-        }}
-      >
-        <div
-          style={{
-            width: "70%",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "#E5E9F2",
-              width: "641px",
-              height: "238px",
-            }}
-          ></div>
-          <div
-            style={{
-              color: "#47525E",
-              fontFamily: "Lato",
-              fontSize: "28px",
-              lineHeight: "33px",
-              width: "643px",
-              textAlign: "left",
-              marginTop: "37px",
-            }}
-          >
-            {data.sanityProduct.name}
-          </div>
-          <div
-            style={{
-              color: "#8190A5",
-              fontFamily: "Lato",
-              fontSize: "18px",
-              lineHeight: "30px",
-              width: "643px",
-              textAlign: "left",
-              marginTop: "19px",
-            }}
-          >
+      <div className="productItem_wrapper">
+        <div className="productItem_container">
+          <div className="productItem_img" />
+          <div className="productItem_heading">{data.sanityProduct.name}</div>
+          <div className="productItem_desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             vestibulum mauris ut diam vulputate, nec scelerisque magna maximus.
             Suspendisse sit amet ex semper nunc quis, consequat arcu.
@@ -81,24 +41,8 @@ const Product = ({ data }) => {
             a aliquam.{" "}
           </div>
         </div>
-        <div
-          style={{
-            width: "30%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            style={{
-              color: " #8190A5",
-              fontFamily: "Lato",
-              fontSize: "20px",
-              lineHeight: "62px",
-              width: "192px",
-              textAlign: "left",
-            }}
-          >
+        <div className="productItem_rightcontainer">
+          <div className="productItem_rightcontainerbtn_price">
             PRICE <br />$ {data.sanityProduct.price}
           </div>
           <br />
@@ -106,37 +50,13 @@ const Product = ({ data }) => {
             <>
               <Link to="/locker">
                 <div
+                  className="productItem_rightcontainerbtn"
                   onClick={() => setBuy(true)}
-                  style={{
-                    backgroundColor: "#47525E",
-                    borderRadius: "5px",
-                    width: "192px",
-                    height: "50px",
-                    color: "#FFFFFF",
-                    fontFamily: "Lato",
-                    fontSize: "18px",
-                    lineHeight: "62px",
-                    width: "192px",
-                    textAlign: "center",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: "pointer",
-                  }}
                 >
                   MY LOCKER
                 </div>
               </Link>
-              <div
-                style={{
-                  color: "#47525E",
-                  fontFamily: "Lato",
-                  fontSize: "16px",
-                  lineHeight: "20px",
-                  textAlign: "left",
-                  marginTop: "34px",
-                }}
-              >
+              <div className="productItem_rightcontainer_desc">
                 Congratulation, you owned it!
               </div>
             </>
@@ -144,35 +64,11 @@ const Product = ({ data }) => {
             <>
               <div
                 onClick={() => setBuy(true)}
-                style={{
-                  backgroundColor: "#47525E",
-                  borderRadius: "5px",
-                  width: "192px",
-                  height: "50px",
-                  color: "#FFFFFF",
-                  fontFamily: "Lato",
-                  fontSize: "18px",
-                  lineHeight: "62px",
-                  width: "192px",
-                  textAlign: "center",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  cursor: "pointer",
-                }}
+                className="productItem_rightcontainerbtn"
               >
                 BUY
               </div>
-              <div
-                style={{
-                  color: "#47525E",
-                  fontFamily: "Lato",
-                  fontSize: "16px",
-                  lineHeight: "20px",
-                  textAlign: "left",
-                  marginTop: "34px",
-                }}
-              >
+              <div className="productItem_rightcontainer_desc">
                 {data.sanityProduct.availability} out of 10 avaliable
               </div>
             </>
@@ -181,7 +77,7 @@ const Product = ({ data }) => {
             <ItemOwned
               name={data.sanityProduct.name}
               setbuyy={buyy => setBuy(buyy)}
-              settogg={tog=>setToggle(tog)}
+              settogg={tog => setToggle(tog)}
             />
           )}
         </div>

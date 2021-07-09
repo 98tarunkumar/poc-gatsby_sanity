@@ -4,7 +4,8 @@ import { Link } from "gatsby"
 
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
-import "./layout.css"
+
+import "./styles.scss"
 // color:0340DD
 // bg
 
@@ -29,58 +30,22 @@ const Header = () => {
   `)
   var navv = ""
   return (
-    <header
-      style={{
-        background: "white",
-        height: "150px",
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        style={{
-          margin: `0 auto`,
-          width: "100%",
-          padding: `1.45rem 1.0875rem`,
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
+    <header className="header_wrapper">
+      <div className="header_div">
         {data.allSanityHeader.edges.map(({ node: head }) => (
           <>
             <div style={{ width: "20%" }}>
               <Link to="/">
                 <GatsbyImage
-                  style={{
-                    width: "200px",
-                    height: "200px",
-                    marginLeft: "10%",
-                    marginTop: "1.5rem",
-                  }}
+                  className="header_img"
                   image={head.logoImage.asset.gatsbyImageData}
                 />
               </Link>
             </div>
             <div style={{ width: "50%" }}></div>
-            <div
-              style={{
-                width: "30%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-evenly",
-              }}
-            >
+            <div className="header_container">
               {head.navlinks.map(nav => (
-                <div
-                  style={{
-                    color: "#47525E",
-                    fontFamily: "Lato",
-                    fontSize: "18px",
-                    lineHeight: "62px",
-                    width: "78px",
-                    textAlign: "center",
-                  }}
-                >
+                <div className="header_linktext">
                   <div style={{ display: "none" }}>
                     {nav === "Home" ? (navv = "") : (navv = nav)}
                   </div>

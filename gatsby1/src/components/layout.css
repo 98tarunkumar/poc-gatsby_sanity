@@ -627,6 +627,12 @@ pre tt:after {
   margin-right: 81px;
   gap: 0.5rem;
 }
+@media screen and (max-width: 748px) {
+  .cardwrappper {
+    grid-template-columns: repeat(1, 3fr);
+    margin-left: 14%;
+  }
+}
 .headerwrapper {
   background: "white";
   height: "150px";
