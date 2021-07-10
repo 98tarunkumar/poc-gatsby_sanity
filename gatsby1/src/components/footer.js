@@ -1,8 +1,4 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-
-import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
 import "./styles.scss"
@@ -48,7 +44,7 @@ const Footer = () => {
             </div>
             <div className="footer_links_wrapper">
               <div className="footer_right">Get your newletter</div>
-              <div style={{ display: "flex" }}>
+              <div style={{ display: "flex",width: "100%"}}>
                 <div className="footer_input_container">
                   <input
                     className="footer_input"

@@ -2,22 +2,33 @@
   background: white;
   height: 150px;
   display: flex;
-  justify-content: center;
 }
 
 .header_div {
   margin: 0 auto;
   width: 100%;
-  padding: 1.45rem 1.0875rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header_div {
+    padding: 1rem;
+  }
 }
 .header_img {
   width: 200px;
   height: 200px;
-  margin-left: 10%;
-  margin-top: 1.5rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .header_img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .header_container {
   width: 30%;
@@ -33,9 +44,10 @@
   width: 78px;
   text-align: center;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
   .header_linktext {
     margin-left: 5px;
+    font-size: 13px;
   }
 }
 .footer_wrapper {
@@ -45,7 +57,7 @@
   width: 100%;
   justify-content: center;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
   .footer_container {
     display: flex;
     flex-direction: column;
@@ -65,13 +77,14 @@
   background-color: #8190a5;
   border-radius: 5px;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
   .footer_leftimg {
     width: 100%;
     height: 800px;
   }
 }
 .footer_links {
+  padding: 1rem;
   width: 18%;
   height: 100%;
   display: flex;
@@ -79,10 +92,11 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
   .footer_links {
     width: 100%;
     font-size: 20px;
+    padding: 0;
   }
 }
 .footer_links_wrapper {
@@ -91,10 +105,10 @@
   justify-content: space-evenly;
   margin-top: -1rem;
   flex-direction: column;
-  padding: 5rem;
+  padding: 2rem;
   color: white;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
   .footer_links_wrapper {
     width: 100%;
     display: flex;
@@ -113,7 +127,7 @@
   text-align: left;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
   .footer_right {
     font-size: 22px;
   }
@@ -121,12 +135,17 @@
 .footer_input_container {
   background-color: #ffffff;
   border-radius: 5px;
-  width: 235px;
+  width: 100%;
   height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .footer_input_container {
+    width: 40%;
+  }
 }
 .footer_input {
   background: white;
-  width: 235px;
+  width: 100%;
   border: none;
   height: 100%;
   border-radius: 5px;
@@ -136,7 +155,7 @@
 .footer_button_subs {
   background-color: #ffffff;
   border-radius: 5px;
-  width: 155px;
+  width: 40%;
   height: 50px;
   color: #47525e;
   font-family: Lato;
@@ -147,13 +166,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  .footer_button_subs {
+    width: 30%;
+  }
 }
 .hero_wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 372px;
-  padding: 4.5rem;
+  padding: 3rem;
 }
 .hero_h1 {
   color: #47525e;
@@ -163,12 +188,12 @@
   width: 732px;
   text-align: left;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
   .hero_h1 {
     font-size: 30px;
     width: 100%;
+    line-height: 30px;
   }
-  
 }
 .hero_p {
   color: #8190a5;
@@ -178,10 +203,11 @@
   width: 620px;
   text-align: left;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
   .hero_p {
     font-size: 15px;
     width: 100%;
+    line-height: 15px;
   }
 }
 .hero_inp {
@@ -207,6 +233,12 @@
   justify-content: center;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .hero_search_btn {
+    font-size: 15px;
+    padding: 0.2rem;
+  }
+}
 .pop_up_wrapper {
   width: 100%;
   height: 100vh;
@@ -219,8 +251,8 @@
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width:748px){
-  .pop_up_wrapper{
+@media screen and (max-width: 768px) {
+  .pop_up_wrapper {
     height: 120vh;
   }
 }
@@ -232,8 +264,8 @@
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width:748px){
-  .pop_up_container{
+@media screen and (max-width: 768px) {
+  .pop_up_container {
     width: 100%;
   }
 }
@@ -255,8 +287,8 @@
   text-align: center;
   margin-top: 35px;
 }
-@media screen and (max-width:748px){
-  .pop_up_lowertext{
+@media screen and (max-width: 768px) {
+  .pop_up_lowertext {
     width: 100%;
   }
 }
@@ -288,13 +320,13 @@
 }
 .productCard_img {
   background-color: #e5e9f2;
-  width: 376px;
+  width: 100%;
   height: 238px;
 }
 .productCard_txtarea {
   width: 50%;
   display: flex;
-  height: 50%;
+  height: 70%;
   flex-direction: column;
   justify-content: center;
 }
@@ -316,10 +348,10 @@
   width: 50%;
   height: 50%;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .productCard_btn_link {
-  margin-top: 85px;
-  margin-left: 4.4rem;
   background-color: #47525e;
   border-radius: 5px;
   width: 108px;
@@ -341,7 +373,7 @@
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
   .profile_wrapper {
     display: flex;
     flex-direction: column;
@@ -361,6 +393,12 @@
   line-height: 33px;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .profile_img {
+    width: 200px;
+    height: 200px;
+  }
+}
 .profile_right {
   width: 60%;
   margin-top: 88px;
@@ -372,10 +410,10 @@
   line-height: 26px;
   text-align: left;
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
   .profile_right {
     width: 100%;
-    margin-left:0;
+    margin-left: 0;
   }
 }
 .profile_heading_wrapper {
@@ -415,4 +453,26 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.card_container {
+  width: 100%;
+  height: 436px;
+  margin: 0 auto;
+}
+.cardwrappper {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .cardwrappper {
+    grid-template-columns: repeat(1, 3fr);
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+input[type="text"]::placeholder {
+  padding-left: 1rem;
 }

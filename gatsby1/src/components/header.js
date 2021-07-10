@@ -42,7 +42,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div style={{ width: "50%" }}></div>
+            
             <div className="header_container">
               {head.navlinks.map(nav => (
                 <div className="header_linktext">

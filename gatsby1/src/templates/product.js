@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import ItemOwned from "../components/ItemOwnedpopup"
 

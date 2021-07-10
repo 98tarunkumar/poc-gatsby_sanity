@@ -8,11 +8,11 @@ const Login = ({ data }) => (
   <>
     <Seo title="Login" />
     <div className="login_wrapper">
-      <img className="login_img" src={Img} />
+      <img className="login_img" alt="login_img" src={Img} />
       <div className="login_container">
         <div className="login_heading">Sign Up</div>
         <div className="login_p">Authenticate with Metamask</div>
-        <div style={{ display: "flex", marginTop: "50px" }}>
+        <div className="progress_bar_container">
           <div className="proggressbar_comp" />
           <div className="proggressbar_incomp" />
         </div>

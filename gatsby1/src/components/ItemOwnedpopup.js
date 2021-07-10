@@ -7,7 +7,11 @@ function ItemOwnedpopup({ name, setbuyy, settogg }) {
   return (
     <div className="pop_up_wrapper">
       <div className="pop_up_container">
-        <img src={Img} style={{ width: "440px", height: "300px" }} />
+        <img
+          src={Img}
+          alt="image_item"
+          style={{ width: "440px", height: "300px" }}
+        />
         <div className="pop_up_heading">Purchase in-progress!</div>
         <div style={{ display: "flex", marginTop: "30px" }}>
           <div className="pop_up_progrssbar_comp" />

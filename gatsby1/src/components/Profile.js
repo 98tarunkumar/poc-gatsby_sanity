@@ -21,9 +21,9 @@ function ItemOwned() {
         <div className="profile_heading">Item Owned</div>
       </div>
       <div className="cardwrappper">
-        <div style={{ width: "377px", height: "436px" }}>
+        <div className="card_container">
           <div className="productCard_img" />
-          <div style={{ display: "flex", height: "100%" }}>
+          <div style={{ display: "flex", height: "70%" }}>
             <div className="productCard_txtarea">
               <p className="productCard_name">ITEM 07</p>
               <p className="productCard_price">Price 120.15$</p>
@@ -35,9 +35,9 @@ function ItemOwned() {
             </div>
           </div>
         </div>
-        <div style={{ width: "377px", height: "436px" }}>
+        <div className="card_container">
           <div className="productCard_img" />
-          <div style={{ display: "flex", height: "100%" }}>
+          <div style={{ display: "flex", height: "70%" }}>
             <div className="productCard_txtarea">
               <p className="productCard_name">ITEM 08</p>
               <p className="productCard_price">Price 120.15$</p>
@@ -49,9 +49,9 @@ function ItemOwned() {
             </div>
           </div>
         </div>
-        <div style={{ width: "377px", height: "436px" }}>
+        <div className="card_container">
           <div className="productCard_img" />
-          <div style={{ display: "flex", height: "100%" }}>
+          <div style={{ display: "flex", height: "70%" }}>
             <div className="productCard_txtarea">
               <p className="productCard_name">ITEM 09</p>
               <p className="productCard_price">Price 120.15$</p>
