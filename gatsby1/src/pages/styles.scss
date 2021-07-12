@@ -1,4 +1,4 @@
-.login_wrapper {
+.login-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,12 +7,12 @@
   height: 100vh;
   width: 100%;
 }
-.login_img {
+.login-img {
   width: 440px;
   height: 300px;
   padding:0.5rem;
 }
-.login_container {
+.login-container {
   width: 100%;
   height: 338px;
   display: flex;
@@ -20,13 +20,13 @@
   flex-direction: column;
   margin-top: -3rem;
 }
-.login_heading {
+.login-heading {
   color: #47525e;
   font-size: 2rem;
   font-family: Lato;
   font-weight: bold;
 }
-.login_p {
+.login-p {
   color: #8190a5;
   font-family: Lato;
   font-size: 18px;
@@ -35,33 +35,33 @@
   text-align: center;
   margin-top: 15px;
 }
-.progress_bar_container {
+.progress-bar-container {
   display: flex;
   margin-top: 50px;
   width: 80%;
   justify-content: center;
 }
-.proggressbar_comp {
+.proggressbar-comp {
   background-color: #8190a5;
   width: 159px;
   height: 8px;
 }
-.proggressbar_incomp {
+.proggressbar-incomp {
   background-color: #e5e9f2;
   width: 407px;
   height: 8px;
 }
 @media screen and (max-width: 768px) {
-  .proggressbar_comp {
+  .proggressbar-comp {
     width: 40%;
   }
 }
 @media screen and (max-width: 768px) {
-  .roggressbar_incomp {
+  .proggressbar-incomp {
     width: 60%;
   }
 }
-.login_btn {
+.login-btn {
   margin-top: 60px;
   background-color: #47525e;
   border-radius: 5px;
@@ -77,7 +77,7 @@
   line-height: 62px;
   text-align: center;
 }
-.logo_desc {
+.logo-desc {
   margin-top: 45px;
   color: #8190a5;
   font-family: Lato;
@@ -86,40 +86,40 @@
   width: 100%;
   text-align: center;
 }
-.productItem_wrapper {
+.productItem-wrapper {
   width: 100%;
   padding: 78px;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .productItem_wrapper {
+  .productItem-wrapper {
     flex-direction: column;
     padding: 3rem;
   }
 }
-.productItem_container {
+.product-item-container {
   width: 70%;
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 768px) {
-  .productItem_container {
+  .product-item-container {
     width: 100%;
     flex-direction: column;
   }
 }
-.productItem_img {
+.product-item-img {
   padding: 1rem;
   background-color: #e5e9f2;
   width: 100%;
   height: 238px;
 }
 @media screen and (max-width: 768px) {
-  .productItem_img {
+  .product-item-img {
     width: 100%;
   }
 }
-.productItem_heading {
+.product-item-heading {
   color: #47525e;
   font-family: Lato;
   font-size: 28px;
@@ -128,7 +128,7 @@
   text-align: left;
   margin-top: 37px;
 }
-.productItem_desc {
+.product-item-desc {
   color: #8190a5;
   font-family: Lato;
   font-size: 18px;
@@ -138,14 +138,14 @@
   margin-top: 19px;
 }
 @media screen and (max-width: 768px) {
-  .productItem_heading {
+  .product-item-heading {
     width: 100%;
   }
-  .productItem_desc {
+  .product-item-desc {
     width: 100%;
   }
 }
-.productItem_rightcontainer {
+.product-item-rightcontainer {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -153,12 +153,12 @@
   padding: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .productItem_rightcontainer {
+  .product-item-rightcontainer {
     padding: 0;
   }
 }
 
-.productItem_rightcontainerbtn_price {
+.product-item-rightcontainerbtn-price {
   color: #8190a5;
   font-family: Lato;
   font-size: 20px;
@@ -166,7 +166,7 @@
   width: 192px;
   text-align: left;
 }
-.productItem_rightcontainerbtn {
+.product-item-rightcontainerbtn {
   background-color: #47525e;
   border-radius: 5px;
   width: 192px;
@@ -182,7 +182,7 @@
   justify-content: center;
   cursor: "pointer";
 }
-.productItem_rightcontainer_desc {
+.product-item-rightcontainer-desc {
   color: #47525e;
   font-family: Lato;
   font-size: 16px;

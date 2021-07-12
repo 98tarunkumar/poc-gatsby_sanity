@@ -30,20 +30,20 @@ const Header = () => {
   `)
   var navv = ""
   return (
-    <header className="header_wrapper">
-      <div className="header_div">
+    <header className="header-wrapper">
+      <div className="header-div">
         {data.allSanityHeader.edges.map(({ node: head }) => (
           <>
             <div style={{ width: "20%" }}>
               <Link to="/">
                 <GatsbyImage
-                  className="header_img"
+                  className="header-img"
                   image={head.logoImage.asset.gatsbyImageData}
                 />
               </Link>
             </div>
             
-            <div className="header_container">
+            <div className="header-container">
               {head.navlinks.map(nav => (
                 <div className="header_linktext">
                   <div style={{ display: "none" }}>

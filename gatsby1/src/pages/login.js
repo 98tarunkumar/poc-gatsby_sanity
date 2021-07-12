@@ -7,19 +7,19 @@ import "./styles.scss"
 const Login = ({ data }) => (
   <>
     <Seo title="Login" />
-    <div className="login_wrapper">
-      <img className="login_img" alt="login_img" src={Img} />
-      <div className="login_container">
-        <div className="login_heading">Sign Up</div>
-        <div className="login_p">Authenticate with Metamask</div>
-        <div className="progress_bar_container">
-          <div className="proggressbar_comp" />
-          <div className="proggressbar_incomp" />
+    <div className="login-wrapper">
+      <img className="login-img" alt="login-img" src={Img} />
+      <div className="login-container">
+        <div className="login-heading">Sign Up</div>
+        <div className="login-p">Authenticate with Metamask</div>
+        <div className="progress-bar-container">
+          <div className="proggressbar-comp" />
+          <div className="proggressbar-incomp" />
         </div>
         <Link to="/">
-          <div className="login_btn">Back to Marketplace</div>
+          <div className="login-btn">Back to Marketplace</div>
         </Link>
-        <div className="logo_desc">
+        <div className="logo-desc">
           By authenticating you agree to our <br />
           Terms & Conditions
         </div>

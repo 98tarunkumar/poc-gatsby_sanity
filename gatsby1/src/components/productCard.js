@@ -29,16 +29,16 @@ const ProductList = () => {
   return (
     <div className="cardwrappper">
       {data.allSanityProduct.edges.map(({ node: product }) => (
-        <div className="card_container">
-          <div className="productCard_img" />
+        <div className="card-container">
+          <div className="product-card-img" />
           <div style={{display: 'flex',height: '70%'}}>
-            <div className="productCard_txtarea">
-              <p className="productCard_name">{product.name}</p>
-              <p className="productCard_price">Price {product.price}$</p>
+            <div className="product-card-txtarea">
+              <p className="product-card-name">{product.name}</p>
+              <p className="product-card-price">Price {product.price}$</p>
             </div>
-            <div className="productCard_btn">
+            <div className="product-card-btn">
               <Link to={product.id}>
-                <div className="productCard_btn_link">BUY</div>
+                <div className="product-card-btn-link">BUY</div>
               </Link>
             </div>
           </div>

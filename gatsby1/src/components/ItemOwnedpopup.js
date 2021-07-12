@@ -5,17 +5,17 @@ import { Link } from "gatsby"
 import "./styles.scss"
 function ItemOwnedpopup({ name, setbuyy, settogg }) {
   return (
-    <div className="pop_up_wrapper">
-      <div className="pop_up_container">
+    <div className="pop-up-wrapper">
+      <div className="pop-up-container">
         <img
           src={Img}
           alt="image_item"
           style={{ width: "440px", height: "300px" }}
         />
-        <div className="pop_up_heading">Purchase in-progress!</div>
+        <div className="pop-up-heading">Purchase in-progress!</div>
         <div style={{ display: "flex", marginTop: "30px" }}>
-          <div className="pop_up_progrssbar_comp" />
-          <div className="pop_up_progrssbar_incomp" />
+          <div className="pop-up-progrssbar-comp" />
+          <div className="pop-up-progrssbar-incomp" />
         </div>
         <Link>
           <div
@@ -23,12 +23,12 @@ function ItemOwnedpopup({ name, setbuyy, settogg }) {
               setbuyy(false)
               settogg(true)
             }}
-            className="pop_up_btn"
+            className="pop-up-btn"
           >
             Back to {name}
           </div>
         </Link>
-        <div className="pop_up_lowertext">Purchase Completed!</div>
+        <div className="pop-up-lowertext">Purchase Completed!</div>
       </div>
     </div>
   )

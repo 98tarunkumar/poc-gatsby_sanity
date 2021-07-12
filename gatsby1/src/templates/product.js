@@ -25,11 +25,11 @@ const Product = ({ data }) => {
   console.log(buy)
   return (
     <Layout>
-      <div className="productItem_wrapper">
-        <div className="productItem_container">
-          <div className="productItem_img" />
-          <div className="productItem_heading">{data.sanityProduct.name}</div>
-          <div className="productItem_desc">
+      <div className="productItem-wrapper">
+        <div className="product-item-container">
+          <div className="product-item-img" />
+          <div className="product-item-heading">{data.sanityProduct.name}</div>
+          <div className="product-item-desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             vestibulum mauris ut diam vulputate, nec scelerisque magna maximus.
             Suspendisse sit amet ex semper nunc quis, consequat arcu.
@@ -40,8 +40,8 @@ const Product = ({ data }) => {
             a aliquam.{" "}
           </div>
         </div>
-        <div className="productItem_rightcontainer">
-          <div className="productItem_rightcontainerbtn_price">
+        <div className="product-item-rightcontainer">
+          <div className="product-item-rightcontainerbtn-price">
             PRICE <br />$ {data.sanityProduct.price}
           </div>
           <br />
@@ -49,13 +49,13 @@ const Product = ({ data }) => {
             <>
               <Link to="/locker">
                 <div
-                  className="productItem_rightcontainerbtn"
+                  className="product-item-rightcontainerbtn"
                   onClick={() => setBuy(true)}
                 >
                   MY LOCKER
                 </div>
               </Link>
-              <div className="productItem_rightcontainer_desc">
+              <div className="product-item-rightcontainer-desc">
                 Congratulation, you owned it!
               </div>
             </>
@@ -63,11 +63,11 @@ const Product = ({ data }) => {
             <>
               <div
                 onClick={() => setBuy(true)}
-                className="productItem_rightcontainerbtn"
+                className="product-item-rightcontainerbtn"
               >
                 BUY
               </div>
-              <div className="productItem_rightcontainer_desc">
+              <div className="product-item-rightcontainer-desc">
                 {data.sanityProduct.availability} out of 10 avaliable
               </div>
             </>

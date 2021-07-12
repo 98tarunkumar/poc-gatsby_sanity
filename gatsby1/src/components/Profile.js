@@ -4,9 +4,9 @@ import "./styles.scss"
 function ItemOwned() {
   return (
     <div>
-      <div className="profile_wrapper">
-        <div className="profile_img">Profile Image</div>
-        <div className="profile_right">
+      <div className="profile-wrapper">
+        <div className="profile-img">Profile Image</div>
+        <div className="profile-right">
           <p style={{ marginBottom: "40px" }}>
             Name John Andrewson <br />
           </p>
@@ -17,48 +17,48 @@ function ItemOwned() {
         </div>
       </div>
 
-      <div className="profile_heading_wrapper">
-        <div className="profile_heading">Item Owned</div>
+      <div className="profile-heading-wrapper">
+        <div className="profile-heading">Item Owned</div>
       </div>
       <div className="cardwrappper">
-        <div className="card_container">
-          <div className="productCard_img" />
+        <div className="card-container">
+          <div className="product-card-img" />
           <div style={{ display: "flex", height: "70%" }}>
-            <div className="productCard_txtarea">
-              <p className="productCard_name">ITEM 07</p>
-              <p className="productCard_price">Price 120.15$</p>
+            <div className="product-card-txtarea">
+              <p className="product-card-name">ITEM 07</p>
+              <p className="product-card-price">Price 120.15$</p>
             </div>
-            <div className="productCard_btn">
+            <div className="product-card-btn">
               <Link to="/-7c81d3d9-3a1d-54bb-83d4-04810e9cfc2a">
-                <div className="productCard_btn_link">View</div>
+                <div className="product-card-btn-link">View</div>
               </Link>
             </div>
           </div>
         </div>
-        <div className="card_container">
-          <div className="productCard_img" />
+        <div className="card-container">
+          <div className="product-card-img" />
           <div style={{ display: "flex", height: "70%" }}>
-            <div className="productCard_txtarea">
-              <p className="productCard_name">ITEM 08</p>
-              <p className="productCard_price">Price 120.15$</p>
+            <div className="product-card-txtarea">
+              <p className="product-card-name">ITEM 08</p>
+              <p className="product-card-price">Price 120.15$</p>
             </div>
-            <div className="productCard_btn">
+            <div className="product-card-btn">
               <Link to="/-f56158a2-e1be-5c28-bde5-606b6ad87448">
-                <div className="productCard_btn_link">View</div>
+                <div className="product-card-btn-link">View</div>
               </Link>
             </div>
           </div>
         </div>
-        <div className="card_container">
-          <div className="productCard_img" />
+        <div className="card-container">
+          <div className="product-card-img" />
           <div style={{ display: "flex", height: "70%" }}>
-            <div className="productCard_txtarea">
-              <p className="productCard_name">ITEM 09</p>
-              <p className="productCard_price">Price 120.15$</p>
+            <div className="product-card-txtarea">
+              <p className="product-card-name">ITEM 09</p>
+              <p className="product-card-price">Price 120.15$</p>
             </div>
-            <div className="productCard_btn">
+            <div className="product-card-btn">
               <Link to="/-4b3f7b9d-66e2-55ae-99e0-41f9bc15d050">
-                <div className="productCard_btn_link">View</div>
+                <div className="product-card-btn-link">View</div>
               </Link>
             </div>
           </div>
