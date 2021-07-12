@@ -2,11 +2,10 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
-import "../components/layout.css"
 import HeaderSection from "../components/headerSection"
 import ProductList from "../components/productCard"
 import Seemore from "../components/Seemore"
-import "../components/layout.css"
+
 export const query = graphql`
   {
     allSanityProduct(sort: { fields: name }) {

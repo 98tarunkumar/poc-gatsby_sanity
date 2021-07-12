@@ -1,6 +1,5 @@
 import * as React from "react"
 import Seo from "../components/seo"
-import "../components/layout.css"
 import { Link } from "gatsby"
 import Img from "../components/mask.png"
 import "./styles.scss"

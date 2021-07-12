@@ -1,8 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-import "../components/layout.css"
-import "./layout.css"
 import "./styles.scss"
 
 const ProductList = () => {
